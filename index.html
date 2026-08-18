@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juliany Esteves — Arquitetura e Interiores</title>
+    <meta
+      name="description"
+      content="Juliany Esteves Arquitetura e Interiores — projetos que unem funcionalidade e estética."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,400&family=Work+Sans:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/index.css" />
+  </head>
+  <body>
+    <header>
+      <span class="mark">JULIANY ESTEVES</span>
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="navMenu">
+        <a href="#sobre">Sobre</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#contato">Orçamento</a>
+      </nav>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <svg
+        class="blueprint"
+        viewBox="0 0 1200 800"
+        preserveAspectRatio="xMidYMid slice"
+        aria-hidden="true"
+      >
+        <!-- faint grid -->
+        <g class="grid-line">
+          <line x1="0" y1="200" x2="1200" y2="200" />
+          <line x1="0" y1="600" x2="1200" y2="600" />
+          <line x1="300" y1="0" x2="300" y2="800" />
+          <line x1="900" y1="0" x2="900" y2="800" />
+        </g>
+        <!-- simplified floor-plan line drawing -->
+        <path
+          d="M180,620 L180,300 L420,300 L420,180 L780,180 L780,420 L1020,420 L1020,620 Z
+             M420,300 L420,420 L620,420
+             M780,300 L620,300 L620,180
+             M180,460 L300,460
+             M900,540 L1020,540"
+        />
+      </svg>
+      <div class="hero-content">
+        <img
+          src="images/logo.jpeg"
+          alt="Logotipo Juliany Esteves"
+          class="hero-logo"
+        />
+        <p class="role">Arquitetura e Interiores</p>
+        <p class="tagline">Projetos que unem funcionalidade e estética.</p>
+      </div>
+      <div class="scroll-cue" aria-hidden="true">
+        <span class="line"></span>
+        <span class="mono">Rolar</span>
+      </div>
+    </section>
+
+    <div class="dim-divider">
+      <span class="tick"></span><span class="run"></span
+      ><span class="tick"></span>
+    </div>
+
+    <!-- ================= SOBRE ================= -->
+    <section class="sobre reveal" id="sobre">
+      <div class="sobre-image">
+        <img src="images/juliany.jpeg" alt="Juliany Esteves" />
+      </div>
+
+      <div class="sobre-body">
+        <p class="mono eyebrow">Sobre o escritório</p>
+
+        <h2>
+          Cada espaço tem<br />
+          uma lógica própria.
+        </h2>
+
+        <p>
+          Juliany Esteves é arquiteta e desenvolve projetos residenciais,
+          comerciais e de interiores com um olhar atento para como as pessoas
+          realmente vivem os espaços. Cada projeto parte da rotina de quem vai
+          habitá-lo — e só depois se transforma em forma, material e luz.
+        </p>
+
+        <p>
+          O resultado são ambientes atemporais, funcionais e com identidade
+          própria, pensados do conceito inicial até o acompanhamento de obra.
+        </p>
+
+        <div class="services">
+          <div class="service">
+            <span class="num mono">01</span>
+
+            <h3>Residencial</h3>
+
+            <p>Projetos de casas e apartamentos, do zero à reforma completa.</p>
+          </div>
+
+          <div class="service">
+            <span class="num mono">02</span>
+
+            <h3>Comercial</h3>
+
+            <p>
+              Espaços de trabalho e lojas com identidade visual e fluxo pensados
+              para o negócio.
+            </p>
+          </div>
+
+          <div class="service">
+            <span class="num mono">03</span>
+
+            <h3>Interiores</h3>
+
+            <p>
+              Design de interiores, marcenaria e curadoria de ambientes já
+              construídos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="dim-divider">
+      <span class="tick"></span><span class="run"></span
+      ><span class="tick"></span>
+    </div>
+
+    <!-- ================= PORTFOLIO ================= -->
+    <section id="portfolio" class="reveal">
+      <div class="portfolio-head">
+        <div>
+          <p class="mono eyebrow">Portfólio</p>
+          <h2>Projetos selecionados</h2>
+        </div>
+        <p class="note">
+          Uma seleção de trabalhos recentes — residenciais, comerciais e de
+          interiores.
+        </p>
+      </div>
+
+      <div class="grid" id="portfolioGrid">
+        <!-- Cards are placeholders: troque a imagem de fundo do .plan (data-attribute) e os textos quando as fotos reais estiverem prontas -->
+      </div>
+
+      <p class="placeholder-note">
+        Imagens ilustrativas — substituir pelas fotos reais dos projetos
+      </p>
+    </section>
+
+    <div class="dim-divider">
+      <span class="tick"></span><span class="run"></span
+      ><span class="tick"></span>
+    </div>
+
+    <!-- ================= CONTATO ================= -->
+    <section id="contato" class="contato reveal">
+      <p class="mono eyebrow">Orçamento</p>
+      <h2>Vamos desenhar o seu próximo projeto?</h2>
+      <p class="sub">
+        Conte um pouco sobre a sua ideia e receba um retorno com os próximos
+        passos.
+      </p>
+
+      <a
+        class="wa-button"
+        id="waButton"
+        href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento"
+        target="_blank"
+        rel="noopener"
+      >
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path
+            d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.48 1.32 5L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm0 18.1h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.4c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.55-3.7 8.25-8.24 8.25zm4.52-6.17c-.25-.12-1.47-.72-1.7-.81-.23-.08-.4-.12-.56.13-.17.25-.65.81-.79.97-.15.17-.29.19-.54.06-.25-.12-1.04-.38-1.99-1.22-.73-.66-1.23-1.46-1.37-1.71-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.44.12-.15.16-.25.24-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.36-.77-1.86-.2-.48-.4-.42-.56-.43-.14-.01-.31-.01-.48-.01a.9.9 0 0 0-.66.31c-.23.25-.86.85-.86 2.06 0 1.22.88 2.4 1 2.56.12.17 1.74 2.68 4.22 3.75.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.19.21-.58.21-1.08.15-1.19-.06-.1-.23-.17-.48-.29z"
+          />
+        </svg>
+        Pedir orçamento no WhatsApp
+      </a>
+
+      <div class="alt">
+        <a
+          href="https://instagram.com/julianyesteves"
+          target="_blank"
+          rel="noopener"
+          >@julianyesteves no Instagram</a
+        >
+      </div>
+    </section>
+
+    <footer>
+      <span class="mono"
+        >© 2026 Juliany Esteves — Arquitetura e Interiores</span
+      >
+      <a
+        class="mono"
+        href="https://instagram.com/julianyesteves"
+        target="_blank"
+        rel="noopener"
+        >Instagram ↗</a
+      >
+    </footer>
+
+    <!-- ================= LIGHTBOX ================= -->
+    <div
+      class="lightbox"
+      id="lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Galeria do projeto"
+    >
+      <button class="lb-close" id="lightboxClose" aria-label="Fechar galeria">
+        &times;
+      </button>
+      <button
+        class="lb-nav lb-prev"
+        id="lightboxPrev"
+        aria-label="Foto anterior"
+      >
+        &#8249;
+      </button>
+      <div class="lb-stage">
+        <img id="lightboxImg" alt="" />
+        <div class="lb-meta">
+          <span id="lightboxTitle" class="mono"></span>
+          <span id="lightboxCounter" class="mono"></span>
+        </div>
+      </div>
+      <button
+        class="lb-nav lb-next"
+        id="lightboxNext"
+        aria-label="Próxima foto"
+      >
+        &#8250;
+      </button>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

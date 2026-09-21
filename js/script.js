@@ -29,33 +29,48 @@ revealEls.forEach((el) => io.observe(el));
 // Projetos sem "images" usam uma plantinha ilustrativa de espaço reservado — troque por fotos quando tiver.
 const projects = [
   {
-    tag: "Comercial · 2025",
-    title: "Escritório Executivo",
-    area: "95 m²",
-    images: [],
+    tag: "Residencial · 2024",
+    title: "Interiones residencial",
+
+    images: [
+      "images/interiores1.jpeg",
+      "images/interiores2.jpeg",
+      "images/interiores3.jpeg",
+      "images/interiores4.jpeg",
+    ],
   },
   {
-    tag: "Interiores · 2025",
-    title: "Cozinha Gourmet",
-    area: "38 m²",
-    images: [],
+    tag: "Arquitetônico · 2025",
+    title: "Fazenda",
+
+    images: [
+      "images/fazenda1.jpeg",
+      "images/fazenda2.jpeg",
+      "images/fazenda3.jpeg",
+    ],
   },
   {
-    tag: "Residencial · 2025",
-    title: "Casa Alto da Serra",
-    area: "210 m²",
+    tag: "Reforma · 2024",
+    title: "Comercial",
+    images: [
+      "images/escritorio1.jpeg",
+      "images/escritorio2.jpeg",
+      "images/escritorio3.jpeg",
+      "images/escritorio4.jpeg",
+      "images/escritorio5.jpeg",
+      "images/escritorio6.jpeg",
+      "images/escritorio7.jpeg",
+      "images/escritorio8.jpeg",
+    ],
   },
   {
-    tag: "Interiores · 2024",
-    title: "Apartamento Jardins",
-    area: "140 m²",
-  },
-  { tag: "Residencial · 2024", title: "Casa Vista Mar", area: "260 m²" },
-  { tag: "Comercial · 2024", title: "Café Terra", area: "70 m²" },
-  {
-    tag: "Interiores · 2023",
-    title: "Cobertura Bela Vista",
-    area: "180 m²",
+    tag: "Residencial · 2022",
+    title: "Reformas de interiores",
+    images: [
+      "images/reforma1.jpeg",
+      "images/reforma2.jpeg",
+      "images/reforma3.jpeg",
+    ],
   },
 ];
 

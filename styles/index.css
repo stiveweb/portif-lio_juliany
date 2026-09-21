@@ -436,16 +436,14 @@ section {
 /* ---------- SERVICES ---------- */
 
 .services {
-  margin-top: 56px;
+  grid-column: 1 / -1;
+  width: 100%;
+  margin-top: 0;
 
   display: grid;
-
   grid-template-columns: repeat(3, 1fr);
-
   gap: 1px;
-
   background: var(--line);
-
   border: 1px solid var(--line);
 }
 
@@ -521,16 +519,16 @@ section {
 
 .grid {
   display: grid;
-
-  grid-template-columns: repeat(3, 1fr);
-
-  gap: 28px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  max-width: 980px;
+  margin: 0 auto;
 }
 
 .card {
   position: relative;
 
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 5 / 4;
 
   background: var(--white);
 

@@ -30,8 +30,7 @@ revealEls.forEach((el) => io.observe(el));
 const projects = [
   {
     tag: "Residencial · 2024",
-    title: "Interiones residencial",
-
+    title: "Interiores residencial",
     images: [
       "images/interiores1.jpeg",
       "images/interiores2.jpeg",
@@ -42,7 +41,6 @@ const projects = [
   {
     tag: "Arquitetônico · 2025",
     title: "Fazenda",
-
     images: [
       "images/fazenda1.jpeg",
       "images/fazenda2.jpeg",
@@ -89,7 +87,7 @@ projects.forEach((p, i) => {
   card.className = "card";
   card.dataset.imgIndex = "0";
 
-  const visual = p.images
+  const visual = p.images?.length
     ? `<img class="plan photo" src="${p.images[0]}" alt="${p.title}" loading="lazy">`
     : `<svg class="plan" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
            <rect width="100" height="100" fill="var(--cream-deep)"/>
@@ -108,7 +106,7 @@ projects.forEach((p, i) => {
       : "";
 
   card.innerHTML = `
-      <span class="card-badge mono">${p.area}</span>
+
       ${visual}
       ${carouselControls}
       <div class="card-info">
@@ -117,7 +115,7 @@ projects.forEach((p, i) => {
       </div>
     `;
 
-  if (p.images) {
+  if (p.images?.length) {
     const imgEl = card.querySelector("img.photo");
     const dots = card.querySelectorAll(".dot");
 
